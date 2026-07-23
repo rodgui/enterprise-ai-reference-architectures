@@ -1,0 +1,21 @@
+name: Experimento
+description: Propor uma hipótese, PoC ou benchmark reproduzível
+title: "[EXP] "
+labels: [experiment]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Pergunta e hipótese
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente e dependências
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências esperadas

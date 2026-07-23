@@ -1,0 +1,21 @@
+name: Tópico de estudo
+description: Registrar uma pergunta ou trilha de investigação
+title: "[Study] "
+labels: [study]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Pergunta de estudo
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto e aplicação corporativa
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Fontes iniciais

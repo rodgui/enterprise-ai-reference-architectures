@@ -1,0 +1,21 @@
+name: Decisão arquitetural
+description: Propor investigação e registro de uma decisão significativa
+title: "[ADR] "
+labels: [architecture, decision]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto e forças
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Alternativas reais
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impactos esperados
