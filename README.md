@@ -1,68 +1,56 @@
-# Technical Knowledge Repository Template
+# Enterprise AI Reference Architectures
 
-Template para repositórios de conhecimento técnico corporativo em IA, com foco em documentação como código, rastreabilidade e evolução segura.
+Padrões arquiteturais reutilizáveis, blueprints de integração e implementações de referência para sistemas de IA corporativa.
 
 ## Objetivo
 
-Padronizar repositórios como:
+Consolidar padrões arquiteturais validados para acelerar o design e a implementação de workloads de IA em ambientes corporativos Azure-first.
 
-- `enterprise-ai-architect`;
-- `ai-agent-governance`;
-- `hybrid-ai-deployment`;
-- `enterprise-ai-devex`;
-- `responsible-ai-engineering`.
+## Escopo
 
-## Modelo
+- Padrões de referência para arquiteturas de IA generativa em escala;
+- Blueprints de integração com sistemas legados;
+- Implementações de referência para padrões de governança e segurança;
+- Diagramas e documentação técnica reutilizáveis.
 
-O template combina, de forma pragmática:
+## Princípios
 
-- Diátaxis para organizar conhecimento;
-- ADRs para decisões arquiteturais;
-- C4 enxuto e diagramas como código;
-- specs simplificadas para trabalhos complexos;
-- experimentos isolados de conteúdo estável;
-- assessments comparativos, de maturidade e risco;
-- rastreabilidade entre requisitos, evidências, decisões e comunicação executiva.
+- Patterns testados e validados, não teóricos
+- Azure-first com extensibilidade multi-cloud
+- Documentação como código (diagramas, specs, ADRs)
+- Reutilização com adaptação contextual, não cópia cega
 
 ## Estrutura
 
 | Área | Finalidade |
 |---|---|
-| `docs/` | Conhecimento consolidado e reutilizável |
-| `docs/architecture/decisions/` | Log de decisões arquiteturais |
-| `specs/` | Capacidades e mudanças estruturadas |
-| `experiments/` | Hipóteses, PoCs e benchmarks |
-| `assessments/` | Avaliações de tecnologia, maturidade e risco |
+| `docs/architecture/` | Visão geral, princípios, atributos de qualidade, riscos, decisões |
+| `docs/architecture/diagrams/` | Diagramas de referência (C4, fluxos, deployment) |
+| `docs/security/` | Padrões de identidade, acesso e segurança |
+| `docs/governance/` | Controles e operating model por padrão |
+| `docs/guides/` | Guias de implementação por cenário |
+| `docs/reference/` | Detalhes técnicos e consultivos |
+| `docs/explanations/` | Contexto e raciocínio arquitetural |
+| `docs/fundamentals/` | Conceitos fundamentais |
+| `docs/devex/` | Experiência de desenvolvimento e plataforma |
+| `docs/operations/` | Operações, observabilidade e resiliência |
+| `docs/responsible-ai/` | Controles de Responsible AI por padrão |
+| `docs/executive/` | Briefs orientados a decisão |
+| `assessments/` | Avaliações de tecnologias e maturidade |
+| `specs/` | Especificações de implementações de referência |
+| `experiments/` | Experimentos, PoCs e validações de padrões |
+| `templates/` | Templates para novos padrões e blueprints |
 | `references/` | Fontes, glossário e bibliografia |
-| `templates/` | Modelos reutilizáveis de artefatos |
-| `.github/` | Governança de contribuição e verificações mínimas |
-| `AGENTS.md` | Contrato operacional para agentes de IA |
+| `tools/scripts/` | Automações de validação |
 
-O scaffold é deliberadamente completo para funcionar como GitHub Template Repository. Pastas ainda sem conteúdo real são preservadas com `.gitkeep`; remova o marcador quando adicionar o primeiro artefato.
+## Relação com outros repositórios
 
-## Como usar
+- `technical-knowledge-repository-template`: base do scaffold compartilhado
+- `enterprise-ai-architect-roadmap`: trilha de desenvolvimento do arquiteto
+- `ai-agent-governance-framework`: policy e controles de governança
+- `hybrid-ai-platform-engineering`: deployment e plataforma
+- `responsible-ai-engineering`: safety e evaluation
 
-1. Gere um repositório a partir deste template.
-2. Substitua este README pelo objetivo e escopo do domínio.
-3. Ajuste owners e CODEOWNERS.
-4. Remova áreas que comprovadamente não se aplicam ao domínio.
-5. Classifique cada novo artefato antes de criá-lo.
-6. Use PR para mudanças relevantes, mesmo trabalhando sozinho.
+## Status
 
-## Princípios
-
-- Não tratar hipótese como fato.
-- Não promover experimento diretamente a padrão aceito.
-- Registrar decisões significativas como ADR.
-- Nunca reescrever silenciosamente uma ADR aceita.
-- Preferir fontes primárias e registrar datas de revisão.
-- Separar evidência, interpretação, recomendação e decisão.
-- Preservar histórico, links relativos e rastreabilidade.
-- Automatizar problemas observados, não complexidade hipotética.
-
-## Primeiros passos
-
-- Consulte [`AGENTS.md`](AGENTS.md).
-- Classifique o trabalho com os READMEs de cada área.
-- Copie o modelo adequado de [`templates/`](templates/README.md).
-- Consulte o [Architecture Decision Log](docs/architecture/decisions/README.md) antes de propor uma decisão.
+Repositório criado em julho de 2026. Conteúdo será populado conforme padrões forem validados nos demais repositórios e projetos corporativos.
